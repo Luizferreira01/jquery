@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(144, 132, 132);
+}
+
+header {
+    padding: 10px 0;
+    color: black;
+    justify-content: center;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 1px;
+}
+
+form {
+    text-align: center;
+    background-color: white;
+    padding: 24px 0;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+form h1 {
+    margin-bottom: 16px;
+}
+
+ul li{
+    background-color: white;
+    text-align: center;
+    text-decoration: line-through;
+}
+
