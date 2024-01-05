@@ -18,7 +18,7 @@ function addtarefa() {
     }else{
         nometarefa.push(inputtarefa.value);
 
-        linha += `<li> ${inputtarefa.value}</li>`;
+        var linha = `<li> ${inputtarefa.value}</li>`;
 
         linhas += linha:
     }
