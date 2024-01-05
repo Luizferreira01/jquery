@@ -20,7 +20,7 @@ function addtarefa() {
 
         var linha = `<li> ${inputtarefa.value}</li>`;
 
-        linhas += linha:
+        linhas += linha;
     }
 
     inputtarefa.value = '';
