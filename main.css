@@ -47,6 +47,7 @@ ul li{
     background-color: white;
     text-align: center;
     text-decoration: line-through;
+    display: none;
 }
 
 .checked {
