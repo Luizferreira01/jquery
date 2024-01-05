@@ -11,19 +11,19 @@ form.addEventListener('submit', function(e) {
 })
 
 function addtarefa() {
-    const inputtarefa = document.getElementById('tarefa');
+    const inputnometarefa = document.getElementById('nometarefa');
 
-    if(nometarefa.includes(inputtarefa.value)){
-        alert(`a tarefa ${inputtarefa.value}ja foi inserida!`);
+    if(nometarefa.includes(inputnometarefa.value)){
+        alert(`a tarefa ${inputnometarefa.value} ja foi inserida!`);
     }else{
-        nometarefa.push(inputtarefa.value);
+        nometarefa.push(inputnometarefa.value);
 
-        var linha = `<li> ${inputtarefa.value}</li>`;
+        var linha = `<li> ${inputnometarefa.value}</li>`;
 
         linhas += linha;
     }
 
-    inputtarefa.value = '';
+    inputnometarefa.value = '';
 }
 
 function atualizatabela(){
