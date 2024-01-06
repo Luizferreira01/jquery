@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista De Tarefas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <title>List de Tarefas</title>
 </head>
 <body>
-    <div class="container">
-        <form id="form" >
-            <header>
-                <h1>lista de tarefas</h1>
-                <input id="nometarefa" type="text" required placeholder="nome tarefa">
-                <button type="submit">cadastrar</button>
-            </header>
-        </form>
-    <tbody>        
-        <ul class="tarefas">
-            <li>
-                jquery
-            </li>
-        </ul>
-    </tbody>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
-    <script src="main.js" ></script>
+    <header>
+        <H1>Lista de Tarefas</H1>
+        <div class="container">
+            <form id="form-lista">
+                <input type="text" id="Tarefa" required placeholder="digite sua tarefa">
+                <button type="submit" id="btn-add">nova tarefa</button>
+            </form>
+            <ul class="tarefas">
+                <li>
+                    casa
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script src="main.js"></script>
 </body>
 </html>
