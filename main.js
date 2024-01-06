@@ -1,18 +1,36 @@
-const form = document.getElementById('form');
-const nometarefa = [];
+const form = document.getElementById('form-lista');
+const NomeTarefa = [];
 let linhas = '';
+
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-const inputnometarefa = document.getElementById('nome-tarefa');
-
-let linha = '<li>';
-linha += `<ul>${inputnometarefa.value}</ul>`;
-linha += '</li>';
-
-const corpotabela = document.querySelector('tbody');
-corpotabela.insertAdjacentHTML('beforeend', linha);
-
-inputnometarefa.value = '';
+    AddTarefa();
+    atualizaTabela();
+    
 })
+
+function AddTarefa() {
+    const InputTarefa = document.getElementById('Tarefa');
+
+    if(NomeTarefa.includes(InputTarefa.value)){
+        alert(`a tarefa ${InputTarefa.value} já foi inserida!`);
+    }else {
+    
+    NomeTarefa.push(InputTarefa.value);
+
+    let linha = `<ul>`;
+    linha += `<li> ${InputTarefa.value}</li>`;
+    linha += `</ul>`;
+
+    linhas += linha;
+    }
+    
+    InputTarefa.value = '';
+}
+
+function atualizaTabela(){
+    const Tabelaraiz = document.querySelector('ul');
+    Tabelaraiz.innerHTML = linhas;
+}
