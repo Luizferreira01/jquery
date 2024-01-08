@@ -20,9 +20,8 @@ function AddTarefa() {
     
     NomeTarefa.push(InputTarefa.value);
 
-    let linha = `<ul>`;
-    linha += `<li> ${InputTarefa.value}</li>`;
-    linha += `</ul>`;
+  
+    let linha = `<li> ${InputTarefa.value}</li>`;
 
     linhas += linha;
     }
